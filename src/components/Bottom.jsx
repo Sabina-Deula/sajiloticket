@@ -2,12 +2,14 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
+import { Label } from "@radix-ui/react-label";
 import {
   FacebookIcon, 
   InstagramIcon,
   TwitterIcon,
 } from "lucide-react";
 import { Link } from "react-router";
+import { Textarea } from "@/components/ui/textarea"
 
 
 const footerSections = [
@@ -41,18 +43,14 @@ const footerSections = [
     ],
   },
   {
-    title: "Resources",
+    title: "Customer Support",
     links: [
       {
-        title: "Blog",
+        title: "Phone: +977 9800000000",
         href: "#",
       },
       {
-        title: "Newsletter",
-        href: "#",
-      },
-      {
-        title: "Events",
+        title: "Email: sajiloticket@gmail.com",
         href: "#",
       },
       {
@@ -78,9 +76,10 @@ export default function Bottom() {
       <div className="grow bg-muted" />
       <footer className="border-t">
         <div className="max-w-(--breakpoint-xl) mx-auto">
-          <div className=" py-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-x-8 gap-y-10 px-6 xl:px-0">
+            <div className=" py-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-x-8 gap-y-10 px-6 xl:px-0">
+              
             <div className="col-span-full xl:col-span-2">
-            
+            <img className="bg-gray-200 shadow-gray-400 " src="/src/assets/logo.png" alt="" />
 
               <p className="mt-4 text-muted-foreground">
                 Book your tickets in seconds and travel without stress. Simple, fast, and always reliable.
@@ -106,15 +105,26 @@ export default function Bottom() {
             ))}
 
             {/* Subscribe Newsletter */}
-            <div className="col-span-2">
+            <div className="gap-40 col-span-2">
               <h6 className="font-medium">Get your tickets book now.</h6>
-              <form className="mt-6 flex items-center gap-2">
+              <form className="mt-6 flex flex-col items-start gap-4">
+                <Input
+                  type="username"
+                  placeholder="Enter your Full Name"
+                  className="grow max-w-64"
+                />
+                
                 <Input
                   type="email"
                   placeholder="Enter your email"
                   className="grow max-w-64"
-                />
-                <Button>Submit</Button>
+                  />
+                  <div className='w-full max-w-xs space-y-2'>
+      <Label>Enter your query here.</Label>
+      <Textarea placeholder="what's on your mind" />
+      <p className='text-muted-foreground text-xs'>Just say what you want to know.</p>
+    </div>
+                <Button className="mt-2">Submit</Button>
               </form>
             </div>
           </div>
