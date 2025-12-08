@@ -40,7 +40,7 @@ const TopBarSocialMedia = () => {
       <span className='contact-item flex items-center hover:text-blue-300 transition-colors'>Visit Us 
             </span>
         <span className='contact-item flex items-center hover:text-blue-300 transition-colors'>Buy Tickets</span>
-       
+      
         {/* Social Media Icons */}
         <div className="social-icons flex items-center gap-2">       
           <div className="flex gap-3">
@@ -132,7 +132,7 @@ const Navbar = () => {
                 />
                 <div className="hidden sm:block">
                   <span className="text-l  font-bold text-shadow-white">
-                   Your Trusted <br /> Travel Partner
+                  Your Trusted <br /> Travel Partner
                   </span>
                 </div>
               </a>
