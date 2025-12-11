@@ -3,6 +3,7 @@ import './App.css';
 import { Routes, Route, createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
+import Search from './components/Search';
 import Bottom from './components/Bottom';
 import RootLayout from './components/RootLayout';
 
@@ -16,6 +17,10 @@ function App() {
         {
           path: "/",
           element: <HomePage />,
+        },
+        {
+          path: "/",
+          element: <Search />,
         },
         {
           path: "bottom",
