@@ -72,8 +72,8 @@ const footerSections = [
 export default function Bottom() {
   return (
     <div>
-      <div className="min-h-screen flex flex-col">
-      <div className="grow bg-muted" />
+      <div className=" flex flex-col">
+      <div className="" />
       <footer className="border-t">
         <div className="max-w-(--breakpoint-xl) mx-auto">
             <div className=" py-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-x-8 gap-y-10 px-6 xl:px-0">

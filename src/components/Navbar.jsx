@@ -58,7 +58,7 @@ const TopBarSocialMedia = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="social-icon w-7 h-7 rounded-full bg-gray-600 flex items-center justify-center hover:bg-green-500 transition-all hover:scale-110"
-              aria-label=""whatsapp
+              aria-label="whatsapp"
             >
               <FaWhatsapp className="text-sm" />
             </a>

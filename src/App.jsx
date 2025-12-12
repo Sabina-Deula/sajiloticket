@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import Bottom from './components/Bottom';
 import RootLayout from './components/RootLayout';
+import Login from './auth/Login';
+import Register from './auth/Register';
 
 function App() {
 
@@ -21,6 +23,14 @@ function App() {
           path: "bottom",
           element: <Bottom />,
         },
+        {
+          path: "login",
+          element: <Login />,
+        },
+        {
+          path: "register",
+          element: <Register />,
+        }
       ]
     },
   ]);
