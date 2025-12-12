@@ -46,7 +46,7 @@ const footerSections = [
     title: "Customer Support",
     links: [
       {
-        title: "Phone: +977 9800000000",
+        title: "Phone: +977 9813185059",
         href: "#",
       },
       {
