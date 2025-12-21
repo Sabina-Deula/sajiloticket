@@ -48,8 +48,6 @@ export default function Login() {
       }
     }
   };
-  console.log(email);
-  console.log(password);
 
   return (
     <div className="flex justify-center py-6">
@@ -84,7 +82,7 @@ export default function Login() {
                 <div className="flex items-center">
                   <Label htmlFor="password">Password</Label>
                   <a
-                    href="#"
+                    href="/forgot-password"
                     className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
                   >
                     Forgot your password?
